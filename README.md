@@ -46,3 +46,19 @@ Launch the miner, passing as arguments the wallet address and number of threads:
 ```
 ./miner 0x0fa10b766aD2F40110BE9ed1fEFdbdbcD2bDdB432F 4
 ```
+
+### Dev
+
+```
+sudo pip3 install setuptools-rust
+sudo pip3 install --upgrade pip
+
+sudo pip3 install -r requirements.txt
+```
+
+### Build executable package
+
+```
+pip3 install pyinstaller
+pyinstaller miner.py --onefile
+```
